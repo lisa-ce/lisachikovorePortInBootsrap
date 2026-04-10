@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LC Portfolio</title>
+
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-lc-v2.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Intro Splash -->
+  <div id="intro" class="intro">
+    <h1 class="initials">L<span>C</span></h1>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top bg-white border-bottom py-3">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="#">
+        <span class="logo-highlight">L</span>isa Chikovore
+      </a>
+
+      <button
+        class="navbar-toggler border-0 shadow-none"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainMenu"
+        aria-controls="mainMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="fs-3">☰</span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="mainMenu">
+        <ul class="navbar-nav gap-lg-3 text-center">
+          <li class="nav-item"><a class="nav-link" href="#about">About me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="py-5 hero-section">
+    <div class="container py-lg-5">
+      <p class="text-secondary mb-4 fs-5">Web Developer</p>
+      <h1 class="display-2 fw-semibold mb-0">Lisa</h1>
+      <p class="display-3 text-secondary mb-4">Chikovore</p>
+      <p class="lead text-secondary hero-summary">
+        Crafting beautiful, responsive web experiences. Passionate about modern JavaScript, clean UI/UX and building products that users love.
+      </p>
+
+      <div class="d-flex flex-wrap gap-3 mt-5">
+        <a href="https://www.linkedin.com/in/lisa-chikovore-476210262/" target="_blank" class="btn btn-dark px-4 py-3 rounded-3">
+          <i class="fa-brands fa-linkedin me-2"></i>Connect
+        </a>
+        <a href="https://www.github.com/lisa-ce" target="_blank" class="btn btn-outline-dark px-4 py-3 rounded-3">
+          <i class="fa-brands fa-github me-2"></i>GitHub
+        </a>
+        <a href="https://www.medium.com/@lisachikovore" target="_blank" class="btn btn-link text-secondary text-decoration-none align-self-center">
+          <i class="fa-regular fa-file-lines me-2"></i>Blog
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="section-title mb-3">About Me</h2>
+      <p class="section-text mb-5">
+        I'm a Full Stack Web Developer passionate about creating beautiful, functional web applications.
+        I specialize in modern JavaScript, responsive design, and building seamless user experiences from concept to deployment.
+      </p>
+
+      <h4 class="mb-4">Certifications</h4>
+      <div class="row g-4">
+        <div class="col-12 col-lg-6">
+          <div class="custom-card h-100">
+            <div class="year">July 2025</div>
+            <h5 class="mt-4 mb-2">Responsive Web Design</h5>
+            <p class="provider mb-0">freeCodeCamp</p>
+            <a href="https://www.freecodecamp.org/certification/lisachikovore/responsive-web-design" target="_blank" class="card-arrow">›</a>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="custom-card h-100">
+            <div class="year">November 2025</div>
+            <h5 class="mt-4 mb-2">JavaScript Algorithms &amp; Data Structures</h5>
+            <p class="provider mb-0">freeCodeCamp</p>
+            <a href="https://freecodecamp.org/certification/lisachikovore/javascript-algorithms-and-data-structures" target="_blank" class="card-arrow">›</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="section-title mb-3">Featured Projects</h2>
+      <p class="section-text mb-5">
+        A collection of web applications showcasing my work in frontend development and full-stack solutions.
+      </p>
+
+      <div class="row g-4">
+        <div class="col-12 col-lg-6">
+          <div class="custom-card h-100">
+            <a href="https://github.com/lisa-ce/l-haircollection" class="external-link" target="_blank">↗</a>
+            <h3 class="h4 fw-semibold">Lhair Collections</h3>
+            <p class="text-secondary mt-3">
+              Premium e-commerce platform for luxury hair wigs with elegant UI and seamless shopping experience.
+            </p>
+            <div class="d-flex gap-2 flex-wrap mt-4">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="custom-card h-100">
+            <a href="https://github.com/lisa-ce/hostelMasetro" class="external-link" target="_blank">↗</a>
+            <h3 class="h4 fw-semibold">NustHostelMenu Predictor</h3>
+            <p class="text-secondary mt-3">
+              AI-powered menu prediction system for hostel meals with weekly forecasting.
+            </p>
+            <div class="d-flex gap-2 flex-wrap mt-4">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section id="blog" class="py-5">
+    <div class="container">
+      <h2 class="section-title mb-3">My articles</h2>
+      <p class="section-text mb-5">Sharing insights about computer science</p>
+
+      <div class="row g-4">
+        <div class="col-12 col-lg-6">
+          <div class="custom-card h-100">
+            <a href="https://medium.com/@lisachikovore" class="external-link" target="_blank">↗</a>
+            <p class="year mb-2">Oct 2025</p>
+            <h3 class="h4 fw-semibold">What happens when you feel "stuck"</h3>
+            <p class="text-secondary mt-3">
+              Inner GPS – A reflection on navigating through moments of uncertainty and finding your direction again.
+            </p>
+            <div class="d-flex align-items-center gap-2 text-secondary small mt-4">
+              <i class="fa-regular fa-clock"></i>
+              <span>5 min read</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="custom-card h-100">
+            <a href="https://medium.com/@lisachikovore" class="external-link" target="_blank">↗</a>
+            <p class="year mb-2">Oct 2025</p>
+            <h3 class="h4 fw-semibold">What is the Internet?</h3>
+            <p class="text-secondary mt-3">
+              Breaking down the fundamentals of how the internet works and connects us all.
+            </p>
+            <div class="d-flex align-items-center gap-2 text-secondary small mt-4">
+              <i class="fa-regular fa-clock"></i>
+              <span>4 min read</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-center mt-5">
+        <a href="https://medium.com/@lisachikovore" class="text-decoration-none text-dark">
+          View all articles on Medium ↗
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="py-5 text-center" id="contact">
+    <div class="container py-lg-4">
+      <h2 class="display-5 fw-bold mb-3">Let's Connect</h2>
+      <p class="section-text mx-auto contact-text mb-5">
+        Looking to collaborate on a web project, discuss frontend tech, or just want to say hello? I'd love to hear from you.
+      </p>
+
+      <div class="d-flex justify-content-center flex-wrap gap-3">
+        <a href="https://www.linkedin.com/in/lisa-chikovore-476210262/" class="btn btn-dark px-4 py-3 rounded-3" target="_blank">
+          <i class="fa-brands fa-linkedin me-2"></i>Connect
+        </a>
+        <a href="mailto:lisachikovore@gmail.com" class="btn btn-outline-dark px-4 py-3 rounded-3">
+          <i class="fa-solid fa-envelope me-2"></i>Send Email
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-top py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between text-secondary small gap-2">
+      <p class="mb-0">© 2025 Lisa Chikovore All rights reserved.</p>
+      <p class="mb-0">Built with passion for the web</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
