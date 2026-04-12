@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+.logo-highlight {
+  color: gray;
+}
+
+.navbar .nav-link {
+  color: gray;
+  transition: 0.3s;
+}
+
+.navbar .nav-link:hover {
+  color: black;
+}
+
+.hero-section {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-summary {
+  max-width: 650px;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.section-text {
+  max-width: 760px;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+.contact-text {
+  max-width: 700px;
+}
+
+.custom-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-4px);
+}
+
+.year {
+  color: #777;
+  font-size: 14px;
+}
+
+.provider {
+  color: #777;
+  font-size: 15px;
+}
+.footer,.header,.paragraph,.about-me{
+  font-size: 20px;
+}
+.card-arrow,
+.external-link {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-decoration: none;
+  color: #666;
+  font-size: 22px;
+}
+
+.tag {
+  padding: 6px 16px;
+  background: #f2f2f2;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #444;
+}
+
+#about,
+#projects,
+#blog,
+#gallery,
+#contact {
+  scroll-margin-top: 90px;
+}
+
+/* Intro splash */
+.intro {
+  position: fixed;
+  inset: 0;
+  background: #e8e8e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  transition: opacity 1s ease, visibility 1s ease;
+}
+
+.intro.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.initials {
+  font-size: 200px;
+  font-weight: 600;
+  letter-spacing: -16px;
+  color: #000;
+  animation: zoomIn 2s ease forwards;
+}
+
+.initials span {
+  font-size: 230px;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .initials {
+    font-size: 110px;
+    letter-spacing: -8px;
+  }
+
+  .initials span {
+    font-size: 130px;
+  }
+}

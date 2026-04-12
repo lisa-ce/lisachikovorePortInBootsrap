@@ -1,0 +1,14 @@
+window.addEventListener("load", function () {
+  const intro = document.getElementById("intro");
+
+  function showLandingPage() {
+    intro.classList.add("hide");
+  }
+
+  const timer = setTimeout(showLandingPage, 3000);
+
+  intro.addEventListener("click", function () {
+    clearTimeout(timer);
+    showLandingPage();
+  });
+});
